@@ -37,6 +37,7 @@ class Driver {
 
     this.origPageUrl = url.parse(pageUrl);
     this.analyzedPageUrls = [];
+    this.foundPageUrls = [];
     this.apps = [];
     this.meta = {};
 
@@ -50,7 +51,7 @@ class Driver {
     this.wappalyzer.driver.log = (message, source, type) => this.log(message, source, type);
     this.wappalyzer.driver.displayApps = (detected, meta, context) => this.displayApps(detected, meta, context);
 
-    process.on('uncaughtException', e => this.wappalyzer.log('Uncaught exception: ' + e.message, 'driver', 'error'));
+    //process.on('uncaughtException', e => this.wappalyzer.log('Uncaught exception: ' + e.message, 'driver', 'error'));
   }
 
   analyze() {
@@ -149,13 +150,16 @@ class Driver {
               if ( link.protocol.match(/https?:/) || link.hostname === this.origPageUrl.hostname || extensions.test(link.pathname) ) {
                 link.hash = '';
 
-                results.push(url.parse(link.href));
+                const urlObject = url.parse(link.href);
+                urlObject.linkText = link.textContent;
+                results.push(urlObject);
               }
 
               return results;
             }, []
           );
 
+          browser.window.close();
           return resolve(links);
         });
     });
@@ -298,6 +302,9 @@ class Driver {
       this.fetch(pageUrl, index, depth)
         .catch(() => {})
         .then(links => {
+          if (links) {
+            this.foundPageUrls.push(...links);
+          }
           if ( links && this.options.recursive && depth < this.options.maxDepth ) {
             return this.chunk(links.slice(0, this.options.maxUrls), depth + 1);
           } else {
@@ -307,6 +314,7 @@ class Driver {
         .then(() => {
           resolve({
             urls: this.analyzedPageUrls,
+            foundUrls: this.foundPageUrls,
             applications: this.apps,
             meta: this.meta
           });
