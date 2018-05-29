@@ -35,6 +35,17 @@
 			"script": "xiti\\.com/hit\\.xiti",
 			"website": "http://atinternet.com/en"
 		},
+		"AWStats": {
+			"cats": [
+				10
+			],
+			"icon": "AWStats.png",
+			"implies": "Perl",
+			"meta": {
+				"generator": "AWStats ([\\d.]+(?: \\(build [\\d.]+\\))?)\\;version:\\1"
+			},
+			"website": "http://awstats.sourceforge.net"
+		},
 		"Act-On": {
 			"cats": [
 				32
@@ -103,13 +114,6 @@
 			"script": "cdn\\.shop\\.pe/widget/",
 			"website": "http://www.addshoppers.com"
 		},
-		"advolution": {
-			"cats": [
-				36
-			],
-			"script": "//asn.advolution.de",
-			"website": "http://advolution.de/"
-		},
 		"AddThis": {
 			"cats": [
 				5
@@ -118,15 +122,7 @@
 				"addthis": ""
 			},
 			"icon": "AddThis.svg",
-			"script": [
-				"addthis\\.com/js/",
-				"//s7.addthis.com/\\.js",
-				"//m.addthisedge.com/\\.js",
-				"//m.addthis.com/\\.js",
-				"//api-public.addthis.com/\\.js",
-				"//su.addthis.com/\\js",
-				"//r.dlx.addthis.com/\\.js"
-			],
+			"script": "addthis\\.com/js/",
 			"website": "http://www.addthis.com"
 		},
 		"AddToAny": {
@@ -140,16 +136,6 @@
 			"script": "addtoany\\.com/menu/page\\.js",
 			"website": "http://www.addtoany.com"
 		},
-		"AdScale": {
-			"cats": [
-				36
-			],
-			"script": [
-				"//js.adscale.de/\\.js",
-				"//ih.adscale.de/\\.js"
-			],
-			"website": "https://www.adscale.com/index.jsp"
-		},
 		"Adnegah": {
 			"cats": [
 				36
@@ -161,25 +147,6 @@
 			"icon": "adnegah.png",
 			"script": "[^a-z]adnegah.*\\.js$",
 			"website": "https://Adnegah.net"
-		},
-		"Adobe Analytics": {
-			"cats": [
-				52
-			],
-			"icon": "Adobe.svg",
-			"script": [
-				"//assets.adobedtm.com/\\.js",
-				"//salesforcecom.demdex.net/\\.js"
-			],
-			"website": "https://www.adobe.com/de/data-analytics-cloud/analytics.html"
-		},
-		"Adobe TubeMogul": {
-			"cats": [
-				36
-			],
-			"icon": "Adobe.svg",
-			"script": "//rtd.tubemogul.com/\\.js",
-			"website": "https://www.tubemogul.com/"
 		},
 		"Advanced Web Stats": {
 			"cats": [
@@ -253,39 +220,13 @@
 			"icon": "Amazon-Cloudfront.svg",
 			"website": "http://aws.amazon.com/cloudfront/"
 		},
-		"Amazon": {
-			"cats": [
-				5
-			],
-			"icon": "Amazon.com-Logo.svg",
-			"script": [
-				"//eu.account.amazon.com/\\.js",
-				"//fls-eu.amazon.com/\\.js",
-				"//images-na.ssl-images-amazon.com/\\.js",
-				"//images-eu.ssl-images-amazon.com/\\.js",
-				"//m.media-amazon.com/\\.js"
-			],
-			"website": "https://www.amazon.com/"
-		},
-		"Amazon Pay": {
-			"cats": [
-				41
-			],
-			"icon": "Amazon Pay.svg",
-			"script": [
-				"//payments-de.amazon.com/\\.js",
-				"//static-eu.payments-amazon.com/\\.js",
-				"//payments.amazon.de/\\.js"
-			],
-			"website": "https://pay.amazon.com/"
-		},
 		"AppNexus": {
 			"cats": [
 				36
 			],
 			"html": "<(?:iframe|img)[^>]+adnxs\\.(?:net|com)",
 			"icon": "AppNexus.svg",
-			"script": "\\adnxs\\.(?:net|com)",
+			"script": "adnxs\\.(?:net|com)",
 			"website": "http://appnexus.com"
 		},
 		"ArcGIS API for JavaScript": {
@@ -311,13 +252,6 @@
 			},
 			"icon": "ArvanCloud.png",
 			"website": "http://www.ArvanCloud.com"
-		},
-		"adform": {
-			"cats": [
-				36
-			],
-			"script": "//track.adform.net/\\.js",
-			"website": "https://site.adform.com/"
 		},
 		"Asciinema": {
 			"cats": [
@@ -380,13 +314,6 @@
 			"script": "^https?://tag\\.bounceexchange\\.com/",
 			"website": "http://www.bounceexchange.com"
 		},
-		"bing Ads": {
-			"cats": [
-				36
-			],
-			"script": "//bat.bing.com/\\.js",
-			"website": "https://advertise.bingads.microsoft.com/de-de/h/a/bingads"
-		},
 		"BugSense": {
 			"cats": [
 				10
@@ -423,6 +350,14 @@
 			"icon": "BuySellAds.png",
 			"script": "^https?://s\\d\\.buysellads\\.com/",
 			"website": "http://buysellads.com"
+		},
+		"CO2Stats": {
+			"cats": [
+				10
+			],
+			"html": "src=[^>]+co2stats\\.com/propres\\.php",
+			"icon": "CO2Stats.png",
+			"website": "http://co2stats.com"
 		},
 		"CacheFly": {
 			"cats": [
@@ -504,7 +439,7 @@
 			"icon": "ClickHeat.png",
 			"implies": "PHP",
 			"script": "clickheat.*\\.js",
-			"website": "https://www.dugwood.com//clickheat/index.html"
+			"website": "http://www.labsmedia.com/clickheat/index.html"
 		},
 		"ClickTale": {
 			"cats": [
@@ -514,10 +449,6 @@
 				"clickTaleStartEventSignal": ""
 			},
 			"icon": "ClickTale.png",
-			"script": [
-				"//cdnssl.clicktale.net/\\.js",
-				"//ing-district.clicktale.net/\\.js"
-			],
 			"website": "http://www.clicktale.com"
 		},
 		"Clicky": {
@@ -583,18 +514,7 @@
 				"criteo_q": ""
 			},
 			"icon": "Criteo.svg",
-			"script": [
-				"//(?:cas\\.criteo\\.com|(?:[^/]\\.)?criteo\\.net)/",
-				"//dis.criteo.com/\\.js",
-				"//gum.criteo.com/\\.js",
-				"//dis.eu.criteo.com/\\.js",
-				"//cat.fr.eu.criteo.com/\\.js",
-				"//cas.criteo.com/\\.js",
-				"//static.criteo.net/\\.js",
-				"//sslwidget.criteo.com/\\.js",
-				"//rtax.criteo.com/\\.js",
-				"//criteo-sync.teads.tv/\\.js"
-			],
+			"script": "//(?:cas\\.criteo\\.com|(?:[^/]\\.)?criteo\\.net)/",
 			"website": "http://criteo.com"
 		},
 		"Cross Pixel": {
@@ -607,13 +527,6 @@
 			"icon": "Cross Pixel.png",
 			"script": "tag\\.crsspxl\\.com/s1\\.js",
 			"website": "http://datadesk.crsspxl.com"
-		},
-		"demandbase": {
-			"cats": [
-				10
-			],
-			"script": "//api.demandbase.com/\\.js",
-			"website": "https://www.demandbase.com/"
 		},
 		"Disqus": {
 			"cats": [
@@ -637,14 +550,7 @@
 			"script": [
 				"googlesyndication\\.com/pagead/show_ads\\.js",
 				"tpc\\.googlesyndication\\.com/safeframe",
-				"googlesyndication\\.com.*abg\\.js",
-				"//securepubads.g.doubleclick.net/gpt/pubads_impl_205.js",
-				"//stats.g.doubleclick.net/\\.js",
-				"//googleads.g.doubleclick.net/\\.js",
-				"//bid.g.doubleclick.net/\\.js",
-				"//cm.g.doubleclick.net/\\.js",
-				"//pubads.g.doubleclick.net/\\.js",
-				"//ad.doubleclick.net/\\.js"
+				"googlesyndication\\.com.*abg\\.js"
 			],
 			"website": "http://www.doubleclickbygoogle.com/solutions/digital-marketing/ad-exchange/"
 		},
@@ -738,38 +644,6 @@
 			],
 			"icon": "Facebook.svg",
 			"script": "//connect\\.facebook\\.net/[^/]*/[a-z]*\\.js",
-			"website": "http://facebook.com"
-		},
-		"Facebook Pixel": {
-			"cats": [
-				36
-			],
-			"icon": "Facebook.svg",
-			"script": "//connect\\.facebook\\.net/[a-z]*_[a-z]*/fbds.js",
-			"website": "http://facebook.com"
-		},
-		"Facebook Events": {
-			"cats": [
-				5
-			],
-			"icon": "Facebook.svg",
-			"script": "//connect\\.facebook\\.net/[a-z]*_[a-z]*/fbevents.js",
-			"website": "http://facebook.com"
-		},
-		"Facebook Graphics": {
-			"cats": [
-				5
-			],
-			"icon": "Facebook.svg",
-			"script": "//graph.facebook.com/\\.js",
-			"website": "http://facebook.com"
-		},
-		"Facebook Connect": {
-			"cats": [
-				5
-			],
-			"icon": "Facebook.svg",
-			"script": "//\\connect.facebook.com/\\.js",
 			"website": "http://facebook.com"
 		},
 		"Fastly": {
@@ -876,30 +750,9 @@
 				"googlesyndication\\.com/",
 				"ad\\.ca\\.doubleclick\\.net",
 				"2mdn\\.net",
-				"ad\\.ca\\.doubleclick\\.net",
-				"//pagead2.googlesyndication.com/\\.js"
+				"ad\\.ca\\.doubleclick\\.net"
 			],
 			"website": "https://www.google.fr/adsense/start/"
-		},
-		"Google Play": {
-			"cats": [
-				5
-			],
-			"icon": "Google play.svg",
-			"script": "//play.google.com/\\.js",
-			"website": "https://play.google.com/store"
-		},
-		"Google AdWords": {
-			"cats": [
-				36
-			],
-			"icon": "GoogleAdWords.svg",
-			"script": [
-				"//www.googleadservices.com/pagead/conversion_async.js",
-				"//adservice.google.de/\\.js",
-				"//adservice.google.com/\\.js"
-			],
-			"website": "http://adwords.google.com/"
 		},
 		"Google Analytics": {
 			"cats": [
@@ -915,11 +768,7 @@
 				"__utma": ""
 			},
 			"icon": "Google Analytics.svg",
-			"script": [
-				"google-analytics\\.com\\/(?:ga|urchin|(analytics))\\.js\\;version:\\1?UA:",
-				"//www.google-analytics.com/analytics.js",
-				"//ssl.google-analytics.com/\\.js"
-			],
+			"script": "google-analytics\\.com\\/(?:ga|urchin|(analytics))\\.js\\;version:\\1?UA:",
 			"website": "http://google.com/analytics"
 		},
 		"Google Analytics Enhanced eCommerce": {
@@ -941,9 +790,7 @@
 			"icon": "Google Maps.png",
 			"script": [
 				"(?:maps\\.google\\.com/maps\\?file=api(?:&v=([\\d.]+))?|maps\\.google\\.com/maps/api/staticmap)\\;version:API v\\1",
-				"//maps\\.googleapis\\.com/maps/api/js",
-				"//maps.gstatic.com/\\.js",
-				"//maps.google.com/\\.js"
+				"//maps\\.googleapis\\.com/maps/api/js"
 			],
 			"website": "http://maps.google.com"
 		},
@@ -968,7 +815,6 @@
 				"<!-- (?:End )?Google Tag Manager -->"
 			],
 			"icon": "Google Tag Manager.png",
-			"script": "//www.googletagmanager.com/\\.js",
 			"website": "http://www.google.com/tagmanager"
 		},
 		"Google Wallet": {
@@ -1032,12 +878,7 @@
 				"hj.apiUrlBase": ""
 			},
 			"icon": "Hotjar.png",
-			"script": [
-				"^//static\\.hotjar\\.com/\\.js",
-				"//script.hotjar.com/\\.js",
-				"//vars.hotjar.com/\\.js",
-				"//insights.hotjar.com/\\.js"
-			],
+			"script": "^//static\\.hotjar\\.com/c/hotjar-",
 			"website": "https://www.hotjar.com"
 		},
 		"HubSpot": {
@@ -1069,12 +910,7 @@
 				"iam_data": ""
 			},
 			"icon": "INFOnline.png",
-			"script": [
-				"^https?://(?:[^/]+\\.)?i(?:oam|v)wbox\\.de/",
-				"//script.ioam.de/\\.js",
-				"//de.ioam.de/\\.js",
-				"////irqs.ioam.de/\\.js"
-			],
+			"script": "^https?://(?:[^/]+\\.)?i(?:oam|v)wbox\\.de/",
 			"website": "https://www.infonline.de"
 		},
 		"Incapsula": {
@@ -1086,13 +922,6 @@
 			},
 			"icon": "Incapsula.png",
 			"website": "http://www.incapsula.com"
-		},
-		"ibillboard": {
-			"cats": [
-				36
-			],
-			"script": "//bbnaut.ibillboard.com\\.js",
-			"website": "http://www.ibillboard.com/en/"
 		},
 		"Infusionsoft": {
 			"cats": [
@@ -1213,13 +1042,6 @@
 			"script": "//(?:www\\.)?kontaktify\\.com/embed\\.js",
 			"website": "https://www.kontaktify.com"
 		},
-		"ligatus": {
-			"cats": [
-				36
-			],
-			"script": "//[a-z0-9-]*.ligatus.com/\\.js",
-			"website": "https://www.ligatus.com/"
-		},
 		"Laterpay": {
 			"cats": [
 				41
@@ -1262,12 +1084,7 @@
 				5
 			],
 			"icon": "Linkedin.svg",
-			"script": [
-				"//platform\\.linkedin\\.com/in\\.js",
-				"//sjs.bizographics.com/\\.js",
-				"//px.ads.linkedin.com/\\.js",
-				"dc.ads.linkedin.com/\\.js"
-			],
+			"script": "//platform\\.linkedin\\.com/in\\.js",
 			"website": "http://linkedin.com"
 		},
 		"LiveAgent": {
@@ -1396,17 +1213,6 @@
 			"icon": "MaxCDN.png",
 			"website": "http://www.maxcdn.com"
 		},
-		"McAfee": {
-			"cats": [
-				5
-			],
-			"icon": "McAfee Logo.svg",
-			"script": [
-				"//www.mcafeesecure.com/\\.js",
-				"cdn.ywxi.net/\\.js"
-			],
-			"website": "https://www.mcafee.com/"
-		},
 		"MediaElement.js": {
 			"cats": [
 				14
@@ -1457,18 +1263,6 @@
 			"script": "mollom(?:\\.min)?\\.js",
 			"website": "http://mollom.com"
 		},
-		"Mathtag": {
-			"cats": [
-				36
-			],
-			"script": [
-				"//sync.mathtag.com/\\.js",
-				"//mathid.mathtag.com/\\.js",
-				"//pixel.mathtag.com/\\.js",
-				"//u3s.mathtag.com/\\.js"
-			],
-			"website": "http://www.mediamath.com/"
-		},
 		"MyBlogLog": {
 			"cats": [
 				5
@@ -1516,38 +1310,7 @@
 				"newrelic": ""
 			},
 			"icon": "New Relic.png",
-			"script": [
-				"//js-agent.newrelic.com/\\.js",
-				"//bam.nr-data.net/\\.js"
-			],
 			"website": "https://newrelic.com"
-		},
-		"Newsletter2go": {
-			"cats": [
-				5
-			],
-			"script": [
-				"//static.newsletter2go.com/utils.js",
-				"//www.newsletter2go.com/\\.js",
-				"//static.newsletter2go.com/\\.js",
-				"//files.newsletter2go.com/\\.js",
-				"//api.newsletter2go.com/\\.js"
-			],
-			"website": "https://www.newsletter2go.com/"
-		},
-		"nugg.ad": {
-			"cats": [
-				36
-			],
-			"script": [
-				"//adselect.nuggad.net/\\.js",
-				"//adscale.nuggad.net/\\.js",
-				"//si-s.nuggad.net/\\.js",
-				"//si.nuggad.net/\\.js",
-				"//define.nuggad.net/\\.js",
-				"//ip.nuggad.net/\\.js"
-			],
-			"website": "https://www.nugg.ad/"
 		},
 		"OWL Carousel": {
 			"cats": [
@@ -1629,10 +1392,7 @@
 			"icon": "OpenX.png",
 			"script": [
 				"https?://[^/]*\\.openx\\.net",
-				"https?://[^/]*\\.servedbyopenx\\.com",
-				"//eu-u.openx.net/\\.js",
-				"//us-u.openx.net/\\.js",
-				"//uk-ads.openx.net/\\.js"
+				"https?://[^/]*\\.servedbyopenx\\.com"
 			],
 			"website": "http://openx.com"
 		},
@@ -1644,12 +1404,7 @@
 				"optimizely": ""
 			},
 			"icon": "Optimizely.png",
-			"script": [
-				"optimizely\\.com.*\\.js",
-				"//cdn.optimizely.com/\\.js",
-				"//cdn3.optimizely.com/\\.js",
-				"//\\.log.optimizely.com/\\.js"
-			],
+			"script": "optimizely\\.com.*\\.js",
 			"website": "https://www.optimizely.com"
 		},
 		"Oracle Recommendations On Demand": {
@@ -1669,10 +1424,7 @@
 				"OB_releaseVer": "(.*)\\;version:\\1"
 			},
 			"icon": "Outbrain.png",
-			"script": [
-				"widgets\\.outbrain\\.com/outbrain\\.js",
-				"//\\.outbrain.com/\\.js"
-			],
+			"script": "widgets\\.outbrain\\.com/outbrain\\.js",
 			"website": "https://www.outbrain.com"
 		},
 		"Pardot": {
@@ -1742,15 +1494,7 @@
 				5
 			],
 			"icon": "Pinterest.svg",
-			"script": [
-				"//assets\\.pinterest\\.com/\\.js",
-				"//assets.pinterest.com/sdk/sdk.js",
-				"//widgets.pinterest.com/\\.js",
-				"//ct.pinterest.com/\\.js",
-				"//log.pinterest.com/\\.js",
-				"/i.pinimg.com/\\.js",
-				"//s.pinimg.com/\\.js"
-			],
+			"script": "//assets\\.pinterest\\.com/js/pinit\\.js",
 			"website": "http://pinterest.com"
 		},
 		"Piwik": {
@@ -1770,11 +1514,8 @@
 				"generator": "Piwik - Open Source Web Analytics",
 				"google-play-app": "app-id=org\\.piwik\\.mobile2"
 			},
-			"script": [
-				"piwik\\.js|piwik\\.php",
-				"//matomo.\\.js"
-			],
-			"website": "http://matomo.org"
+			"script": "piwik\\.js|piwik\\.php",
+			"website": "http://piwik.org"
 		},
 		"Po.st": {
 			"cats": [
@@ -1929,10 +1670,6 @@
 			},
 			"html": "<[^>]+=\"brandQuaternaryFgrs\"",
 			"icon": "Salesforce.svg",
-			"script": [
-				"//omtr2.partners.salesforce.com/\\.js",
-				"//salesforcecom.tt.omtrdc.net/\\.js"
-			],
 			"website": "https://www.salesforce.com"
 		},
 		"Segment": {
@@ -1955,12 +1692,7 @@
 				"SHARETHIS": ""
 			},
 			"icon": "ShareThis.png",
-			"script": [
-				"w\\.sharethis\\.com/",
-				"//l.sharethis.com/\\.js",
-				"//t.sharethis.com/\\.js",
-				"//sync.sharethis.com/\\.js"
-			],
+			"script": "w\\.sharethis\\.com/",
 			"website": "http://sharethis.com"
 		},
 		"ShinyStat": {
@@ -2065,14 +1797,6 @@
 			"script": "assetscdn\\.stackla\\.com\\/media\\/js\\/widget\\/(?:[a-zA-Z0-9.]+)?\\.js",
 			"website": "http://stackla.com/"
 		},
-		"Soundcloud": {
-			"cats": [
-				5
-			],
-			"icon": "SoundCloud - Logo.svg",
-			"script": "//w.soundcloud.com/\\.js",
-			"website": "https://soundcloud.com/"
-		},
 		"Statcounter": {
 			"cats": [
 				10
@@ -2083,10 +1807,7 @@
 				"sc_project": "\\;confidence:50",
 				"sc_security": "\\;confidence:50"
 			},
-			"script": [
-				"statcounter\\.com/counter/counter",
-				"//c.statcounter.com/\\.js"
-			],
+			"script": "statcounter\\.com/counter/counter",
 			"website": "http://www.statcounter.com"
 		},
 		"Stripe": {
@@ -2120,16 +1841,6 @@
 			"icon": "SumoMe.png",
 			"script": "load\\.sumome\\.com",
 			"website": "http://sumome.com"
-		},
-		"Taboola": {
-			"cats": [
-				36
-			],
-			"script": [
-				"//cdn.taboola.com/libtrc/[a-z-]*/loader.js",
-				"//trc.taboola.com/\\.js"
-			],
-			"website": "https://www.taboola.com/de"
 		},
 		"Tawk.to": {
 			"cats": [
@@ -2186,38 +1897,12 @@
 			"script": "tracker\\.js",
 			"website": "http://trackjs.com"
 		},
-		"Trusted Shops": {
-			"cats": [
-				5
-			],
-			"script": [
-				"//widgets.trustedshops.com/\\.js",
-				"//www.trustedshops.com/\\.js"
-			],
-			"website": "http://www.trustedshops.com/"
-		},
 		"Twitter": {
 			"cats": [
 				5
 			],
 			"icon": "Twitter.svg",
 			"script": "//platform\\.twitter\\.com/widgets\\.js",
-			"website": "http://twitter.com"
-		},
-		"Twitter Ads": {
-			"cats": [
-				36
-			],
-			"icon": "Twitter.svg",
-			"script": "//static\\. ads-twitter \\.com/ \\.js",
-			"website": "http://twitter.com"
-		},
-		"Twitter Analytics": {
-			"cats": [
-				10
-			],
-			"icon": "Twitter.svg",
-			"script": "//analytics.twitter.com/\\.js",
 			"website": "http://twitter.com"
 		},
 		"UserEngage": {
@@ -2238,8 +1923,7 @@
 			"icon": "UserLike.svg",
 			"script": [
 				"userlike\\.min\\.js",
-				"userlikelib\\.min\\.js",
-				"//api.userlike.com/\\.js"
+				"userlikelib\\.min\\.js"
 			],
 			"website": "http://userlike.com"
 		},
@@ -2305,11 +1989,6 @@
 				14
 			],
 			"html": "(?:<(?:param|embed)[^>]+vimeo\\.com/moogaloop|<iframe[^>]player\\.vimeo\\.com)",
-			"script": [
-				"//player.vimeo.com/api/player.js",
-				"//vimeo.com/\\.js",
-				"//player.vimeo.com/\\.js"
-			],
 			"icon": "Vimeo.png",
 			"website": "http://vimeo.com"
 		},
@@ -2367,13 +2046,6 @@
 			"script": "static\\.woopra\\.com",
 			"website": "http://www.woopra.com"
 		},
-		"Xing": {
-			"cats": [
-				5
-			],
-			"script": "//www.xing-share.com/\\.js",
-			"website": "https://www.xing.com/"
-		},
 		"Yahoo Advertising": {
 			"cats": [
 				36
@@ -2386,10 +2058,7 @@
 				"<img[^>]+clicks\\.beap\\.bc\\.yahoo\\.com"
 			],
 			"icon": "yahoo.png",
-			"script": [
-				"adinterax\\.com",
-				"//ads.yahoo.com/\\.js"
-			],
+			"script": "adinterax\\.com",
 			"website": "http://advertising.yahoo.com"
 		},
 		"Yahoo! Web Analytics": {
@@ -2400,11 +2069,7 @@
 				"YWA": ""
 			},
 			"icon": "yahoo.png",
-			"script": [
-				"d\\.yimg\\.com/mi/ywa\\.js",
-				"//cms.analytics.yahoo.com/\\.js",
-				"//sp.analytics.yahoo.com/\\.js"
-			],
+			"script": "d\\.yimg\\.com/mi/ywa\\.js",
 			"website": "http://web.analytics.yahoo.com"
 		},
 		"Yandex.Direct": {
@@ -2448,12 +2113,6 @@
 			],
 			"html": "<(?:param|embed|iframe)[^>]+youtube(?:-nocookie)?\\.com/(?:v|embed)",
 			"icon": "YouTube.png",
-			"script": [
-				"//www.youtube-nocookie.com/\\.js",
-				"//s.ytimg.com/\\.js",
-				"//www.youtube.com/\\.js",
-				"//img.youtube.com/\\.js"
-			],
 			"website": "http://www.youtube.com"
 		},
 		"Zanox": {
@@ -2473,11 +2132,7 @@
 				52
 			],
 			"icon": "Zendesk Chat.png",
-			"script": [
-				"v2\\.zopim\\.com",
-				"//assets.zendesk.com/\\.js",
-				"//\\.zendesk.com/\\.js"
-			],
+			"script": "v2\\.zopim\\.com",
 			"website": "http://zopim.com"
 		},
 		"comScore": {
@@ -2511,10 +2166,7 @@
 			},
 			"html": "(?:<div[^>]+id=\"recaptcha_image|<link[^>]+recaptcha|document\\.getElementById\\('recaptcha')",
 			"icon": "reCAPTCHA.png",
-			"script": [
-				"(?:api-secure\\.recaptcha\\.net|recaptcha_ajax\\.js)",
-				"//gstatic.com/recaptcha/api2/[a-z0-9]*/recaptcha__de.js"
-			],
+			"script": "(?:api-secure\\.recaptcha\\.net|recaptcha_ajax\\.js)",
 			"website": "https://www.google.com/recaptcha/"
 		},
 		"Raychat": {
@@ -2623,263 +2275,6 @@
 			},
 			"icon": "vwo.svg",
 			"website": "https://vwo.com/"
-		},
-		"Zemanta": {
-			"cats": [
-				36
-			],
-			"script": "//b1sync.zemanta.com/\\.js",
-			"website": "http://www.zemanta.com/"
-		},
-		"ad4mat": {
-			"cats": [
-				36
-			],
-			"script": "//ad4mat.de/\\.js",
-			"website": "https://www.ad4mat.com/de/"
-		},
-		"RTB Markt": {
-			"cats": [
-				36
-			],
-			"script": [
-				"//www.rvty.net/\\.js",
-				"//brain.rvty.net/\\.js"
-			],
-			"website": "http://www.rtbmarkt.de/de/rtbmarkt-programmatic-advertising/"
-		},
-		"Dynamic Yield": {
-			"cats": [
-				10
-			],
-			"script": [
-				"//cdn.dynamicyield.com/\\.js",
-				"//cdn.dynamicyield.com/\\.js",
-				"//px.dynamicyield.com/\\.js",
-				"//rcom.dynamicyield.com/\\.js"
-			],
-			"website": "https://www.dynamicyield.com/"
-		},
-		"Remintrex": {
-			"cats": [
-				36
-			],
-			"script": "//www.remintrex.com/\\.js",
-			"website": "http://www.remintrex.com/site/"
-		},
-		"AWIN": {
-			"cats": [
-				36
-			],
-			"script": [
-				"//www.dwin1.com/\\.js",
-				"//static.zanox.com/\\.js",
-				"//api.zanox.com/\\.js",
-				"//ad.zanox.com/\\.js",
-				"//api.zanox.ws/\\.js",
-				"//act.webmasterplan.com/\\.js",
-				"//p.webmasterplan.com'/\\.js"
-			],
-			"website": "https://www.awin.com/"
-		},
-		"fitanalytics": {
-			"cats": [
-				5
-			],
-			"script": "//www.upcload.com/\\.js",
-			"website": "https://www.fitanalytics.com/"
-		},
-		"accengage": {
-			"cats": [
-				53
-			],
-			"script": "//www.accengage.com/\\.js",
-			"website": "https://www.accengage.com/"
-		},
-		"wishpond": {
-			"cats": [
-				36,
-				51
-			],
-			"script": [
-				"//www.wishpond.com/\\.js",
-				"//goverseer.wishpond.com/\\.js",
-				"//jambo.wishpond.com/\\.js",
-				"//\\.wishpond.com/\\.js"
-			],
-			"website": "https://www.wishpond.com/"
-		},
-		"nosto": {
-			"cats": [
-				36,
-				51,
-				10
-			],
-			"script": [
-				"//nosto-campaign-assets.s3.amazonaws.com/\\.js",
-				"//connect.nosto.com/\\.js"
-			],
-			"website": "http://www.nosto.com/"
-		},
-		"App Lift": {
-			"cats": [
-				36,
-				10
-			],
-			"script": "//newapplift-production.s3.amazonaws.com/\\.js",
-			"website": "https://www.applift.com/"
-		},
-		"realytics": {
-			"cats": [
-				36,
-				10
-			],
-			"script": [
-				"//tc-sync.realytics.io/\\.js",
-				"//api.realytics.io/\\.js",
-				"//tp.realytics.io/\\.js",
-				"//i.realytics.io/\\.js"
-			],
-			"website": "https://www.realytics.io/de/"
-		},
-		"Spot X": {
-			"cats": [
-				36
-			],
-			"script": "//sync.search.spotxchange.com/\\.js",
-			"website": "https://www.spotx.tv/"
-		},
-		"Oracle BlueKai": {
-			"cats": [
-				36
-			],
-			"script": "//\\tags.bluekai.com/\\.js",
-			"website": "http://www.bluekai.com/registry-de/"
-		},
-		"avocet": {
-			"cats": [
-				32
-			],
-			"script": "//ads.avocet.io/\\.js",
-			"website": "https://avocet.io/"
-		},
-		"atriba": {
-			"cats": [
-				36
-			],
-			"script": "//o.adtriba.com/\\.js",
-			"website": "https://www.atriba.com/"
-		},
-		"whatsbroadcast": {
-			"cats": [
-				5
-			],
-			"script": "//widget.whatsbroadcast.com/\\.js",
-			"website": "https://www.whatsbroadcast.com/"
-		},
-		"etracker": {
-			"cats": [
-				10
-			],
-			"script": [
-				"//static.etracker.com/\\.js",
-				"//www.etracker.de/\\.js",
-				"//code.etracker.com/\\.js"
-			],
-			"website": "https://www.etracker.com/"
-		},
-		"Amobee": {
-			"cats": [
-				36
-			],
-			"script": [
-				"//r.turn.com/\\.js",
-				"//d.turn.com/\\.js"
-			],
-			"website": "https://www.amobee.com/"
-		},
-		"Marvellous Machine": {
-			"cats": [
-				10,
-				36
-			],
-			"script": "//maytrics.marvellousmachine.net/\\.js",
-			"website": "https://marvellousmachine.net/"
-		},
-		"ve interactive": {
-			"cats": [
-				10,
-				36
-			],
-			"script": [
-				"//config1.veinteractive.com/\\.js",
-				"//cookiee1.veinteractive.com/\\.js",
-				"//appsapi.veinteractive.com/\\.js",
-				"//drs2.veinteractive.com/\\.js"
-			],
-			"website": "https://www.ve.com/"
-		},
-		"Netletix": {
-			"cats": [
-				36
-			],
-			"script": [
-				"//tag.md-nx.com/\\.js",
-				"//tag.partner.mairdumont.com/\\.js",
-				"//exitevent.netletix.de/\\.js"
-			],
-			"website": "https://www.mairdumont-netletix.com/"
-		},
-		"One Ad Server": {
-			"cats": [
-				36
-			],
-			"script": [
-				"//adserver.adtech.de/\\.js",
-				"//ums.adtech.de/\\.js"
-			],
-			"website": "https://oneadserver.aol.com/"
-		},
-		"Casale Media": {
-			"cats": [
-				36
-			],
-			"script": [
-				"//ssum.casalemedia.com/\\.js",
-				"//ssum-sec.casalemedia.com/\\.js",
-				"//dsum.casalemedia.com/\\.js",
-				"//as-sec.casalemedia.com/\\.js",
-				"//dsum-sec.casalemedia.com/\\.js",
-				"//r.casalemedia.com/\\.js"
-			],
-			"website": "http://casalemedia.com/"
-		},
-		"Adition": {
-			"cats": [
-				36
-			],
-			"script": "//ad2.adfarm1.adition.com/\\.js",
-			"website": "https://www.adition.com/"
-		},
-		"Meetrics": {
-			"cats": [
-				36
-			],
-			"script": [
-				"//s400.meetrics.net/\\.js",
-				"//dc95.s400.meetrics.net/\\.js",
-				"//dc102.s400.meetrics.net/\\.js",
-				"//s240.meetrics.net/\\.js",
-				"//dc2.s240.meetrics.net/\\.js"
-			],
-			"website": "https://www.meetrics.com/"
-		},
-		"treacead": {
-			"cats": [
-				10
-			],
-			"script": "//tracead.com/\\.js",
-			"website": "http://www.tracead.co.uk/"
 		}
 	},
 	"categories": {
