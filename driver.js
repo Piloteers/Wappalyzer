@@ -6,12 +6,10 @@ const url = require('url');
 const fs = require('fs');
 const Browser = require('zombie');
 
-const json = JSON.parse(fs.readFileSync(__dirname + '/apps.json'));
-
 const extensions = /^([^.]+$|\.(asp|aspx|cgi|htm|html|jsp|php)$)/;
 
 class Driver {
-  constructor(pageUrl, options) {
+  constructor(pageUrl, options, data) {
     this.options = Object.assign({}, {
       chunkSize: 5,
       debug: false,
@@ -43,8 +41,8 @@ class Driver {
 
     this.wappalyzer = new Wappalyzer();
 
-    this.wappalyzer.apps = json.apps;
-    this.wappalyzer.categories = json.categories;
+    this.wappalyzer.apps = data.apps;
+    this.wappalyzer.categories = data.categories;
 
     this.wappalyzer.parseJsPatterns();
 
@@ -78,7 +76,7 @@ class Driver {
       app.props.cats.forEach(id => {
         var category = {};
 
-        category[id] = json.categories[id].name;
+        category[id] = data.categories[id].name;
 
         categories.push(category)
       });
