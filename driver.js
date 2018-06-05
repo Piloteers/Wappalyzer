@@ -76,7 +76,7 @@ class Driver {
 
       app.props.cats.forEach(id => {
         var category = {};
-
+        console.log('data', this.data);
         category[id] = this.data.categories[id].name;
 
         categories.push(category)
