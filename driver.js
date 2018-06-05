@@ -38,6 +38,7 @@ class Driver {
     this.foundPageUrls = [];
     this.apps = [];
     this.meta = {};
+    this.data = data;
 
     this.wappalyzer = new Wappalyzer();
 
@@ -76,7 +77,7 @@ class Driver {
       app.props.cats.forEach(id => {
         var category = {};
 
-        category[id] = data.categories[id].name;
+        category[id] = this.data.categories[id].name;
 
         categories.push(category)
       });
